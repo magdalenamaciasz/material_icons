@@ -1,0 +1,31 @@
+@import url('reset.css');
+
+ul {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+@media all and (min-width: 700px){
+    ul {
+     flex-direction: row;
+    }
+}
+
+li::before {
+    font-family: 'material icons';
+    font-size: 24px;
+    font-weight: bold;
+    content: 'check';
+    color: green;
+}
+
+li:nth-child(4)::before {
+    content: 'close';
+    color: red;
+}
+
+
+
